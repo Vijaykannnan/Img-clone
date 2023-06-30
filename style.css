@@ -1,0 +1,596 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color: hsl(211.97deg 72.49% 62.94%);
+}
+
+
+
+main {
+    background: #000;
+    height: 120vh;
+}
+
+main .skyblue-bg {
+    /* background: #cd7979; */
+    width: 80%;
+    margin: auto;
+    height: 119vh;
+    background: hsl(211.62deg 100% 85.49%);
+    position: relative;
+}
+
+main .skyblue-bg .whole-blue {
+    position: absolute;
+    /* background: #c06c6c; */
+    background: hsl(211.97deg 72.49% 62.94%);
+    width: 90%;
+    margin: 6.5%;
+    display: flex;
+    height: 99vh;
+    border-radius: 8%;
+}
+
+main .skyblue-bg .left-blue {
+    background: hsl(211.97deg 72.49% 62.94%);
+    width: 25%;
+    /* height: 93vh; */
+    border-radius: 3rem 0 0 3rem;
+    color: #fff;
+    overflow: hidden;
+}
+
+.left-blue .left-blue__icons {
+    display: flex;
+    justify-content: space-around;
+    margin: 15% 0 16% 0;
+}
+
+
+.left-blue__country .country {
+    display: flex;
+    justify-content: space-around;
+    margin: 5%;
+}
+
+.left-blue .country-condition {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10%;
+}
+
+.left-blue .wheather {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.left-blue .wheather p:nth-child(1) {
+    font-size: 5rem;
+    font-weight: 540;
+
+}
+
+.left-blue .wheather sup {
+    font-size: 3rem;
+    position: relative;
+    top: -10px;
+}
+
+.left-blue .wheather p:nth-child(2) {
+    font-size: 1.4rem;
+}
+
+/* right side--------------- */
+
+.whole-blue .right-blue {
+    background: hsl(211.11deg 100% 94.71%);
+    width: 79%;
+    border-radius: 8%;
+}
+
+.right-blue .header {
+    /* background: #e7a6a6; */
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 3rem;
+}
+
+.right-blue .header .profile {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* background: #000; */
+    width: 15%;
+}
+
+.right-blue .upcoming {
+    background: #fff;
+    width: 93%;
+    height: 34vh;
+    margin: auto;
+    border-radius: 2rem;
+}
+
+.upcoming .upcoming-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 3rem;
+}
+
+.upcoming .upcoming-header div {
+    display: flex;
+}
+
+.upcoming .upcoming-content {
+    /* background: hsl(111, 76%, 60%); */
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.upcoming .upcoming-content .line {
+    height: 11vh;
+    width: .1rem;
+    background: #8b8181;
+    margin-left: .5rem;
+    position: relative;
+    z-index: 2;
+}
+
+.right-blue .more-details {
+    /* background: #ccc; */
+    padding: 10px;
+}
+
+.right-blue .more-details .title {
+    padding: 1rem 2rem;
+}
+
+.right-blue .more-details .details-column {
+    /* background: #88aaf2; */
+    padding: .1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+}
+
+.details-column .humidity,
+.wind,
+.percipitation,
+.uvindex,
+.feels,
+.rain {
+    background: #fff;
+    width: 30%;
+    height: 17vh;
+    padding: 10px;
+    border-radius: 30px;
+}
+
+.details-column .humidity-head,
+.wind-head,
+.percipitation-head,
+.uv-head,
+.feels-head,
+.rain-head {
+    display: flex;
+    justify-content: space-around;
+}
+
+.humidity h3,
+.percipitation h3,
+.uvindex h3,
+.feels h3,
+.rain h3 {
+    text-align: center;
+    padding: 1rem;
+}
+
+.humidity .humidity-foot,
+.percipitation-foot,
+.uv-foot {
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+}
+
+.humidity .humidity-foot .behaviour {
+    text-align: center;
+}
+
+.humidity .humidity-foot .line-rad {
+    width: 4.3%;
+    height: 1.3%;
+    background: hsl(0, 5%, 81%);
+    position: absolute;
+    border-radius: 35px;
+}
+
+.humidity .humidity-foot .line-rad p {
+    background: var(--color);
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    border-radius: 35px;
+}
+
+.humidity .humidity-foot .line-rad .bad {
+    width: 50%;
+    border-radius: 35px 0 0 35px;
+}
+
+.humidity .humidity-foot .line-rad:nth-child(3),
+.percipitation-foot {
+    margin-left: 4%;
+}
+
+.percipitation-foot .behaviour {
+    margin-left: 2.5%;
+    text-align: center;
+}
+
+.percipitation .percipitation-foot .line-rad {
+    width: 1.34%;
+    height: 1.3%;
+    background: hsl(0, 5%, 81%);
+    position: absolute;
+    margin-left: .3%;
+    border-radius: 40px;
+    /* margin-left: 1rem; */
+}
+
+.percipitation .percipitation-foot .behaviour:nth-child(1)>.line-rad {
+    margin-left: -.1%;
+
+}
+
+.percipitation .percipitation-foot .behaviour:nth-child(2)>.line-rad {
+    margin-left: .6%;
+
+}
+
+.percipitation .percipitation-foot .behaviour:nth-child(2)>.line-rad p {
+    background: var(--color);
+    width: 70%;
+    height: 100%;
+    border-radius: 35px 0 0 35px;
+    margin-left: -1px;
+
+}
+
+.percipitation .percipitation-foot .behaviour:nth-child(1)>.line-rad p {
+    background: var(--color);
+    width: 100%;
+    height: 100%;
+    border-radius: 40px;
+    margin-right: 2px;
+    margin-left: .1px;
+}
+
+.uvindex .uv-foot .line-rad {
+    width: 2.7%;
+    height: 1.3%;
+    background: hsl(0, 5%, 81%);
+    position: absolute;
+    margin-left: .1%;
+    border-radius: 35px;
+}
+
+.uvindex .uv-foot .behaviour:nth-child(1) .line-rad p,
+.behaviour:nth-child(2) .line-rad p {
+    background: var(--color);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border-radius: 35px;
+    margin-left: -.1rem;
+}
+
+.uvindex .uv-foot .behaviour:nth-child(2) .line-rad p {
+    width: 60%;
+    margin-left: -.1rem;
+    border-radius: 35px 0 0 35px;
+}
+
+.behaviour {
+    color: #a19f9f;
+}
+
+.feels .behaviour .calcul,
+.rain .behaviour .calcul {
+    display: flex;
+    justify-content: space-around;
+}
+
+.feels .behaviour {
+    margin-top: -5%;
+}
+
+.feels .behaviour .line-rad,
+.rain .line-rad {
+    width: 15%;
+    height: 1.3%;
+    background: hsl(0, 5%, 81%);
+    position: absolute;
+    margin-left: 1.9%;
+    border-radius: 30px;
+}
+
+.feels .behaviour .line-rad p,
+.rain .behaviour .line-rad p {
+    width: 80%;
+    height: 100%;
+    background: var(--color);
+    border-radius: 35px 0 0 35px;
+}
+
+.rain .behaviour {
+    margin-top: -4%;
+}
+
+.rain .line-rad {
+    width: 17%;
+    margin-left: .5rem;
+}
+
+.rain .behaviour .line-rad p {
+    width: 40%;
+}
+
+/* design an left side  ----------------------------------------------*/
+.left-blue i {
+    color: #ffffff;
+}
+
+.left-blue__icons i {
+    font-size: 1.2rem;
+}
+
+.left-blue__icons div {
+    display: flex;
+    align-items: center;
+    /* background: #ff6a6a; */
+}
+
+.left-blue__icons div p {
+    font-size: .59rem;
+    margin: 4px;
+    color: #fff;
+}
+
+.left-blue__country i {
+    font-size: .8rem;
+}
+
+.left-blue__country .country p:nth-child(1) {
+    font-size: .9rem;
+}
+
+.left-blue__country .country-condition p:nth-child(2) {
+    margin-left: .7rem;
+}
+
+.left-blue__country p {
+    font-size: .8rem;
+}
+
+.fa-chevron-left,
+.fa-chevron-right {
+    color: #e2dada !important;
+}
+
+.sunny {
+    color: #f2ecec;
+    font-size: 1.4rem !important;
+}
+
+.sunny i {
+    font-size: 1rem;
+}
+
+.banner {
+    position: relative;
+
+}
+
+.banner img {
+    width: 190%;
+    height: 80vh;
+    position: absolute;
+    left: -80%;
+}
+
+.right-blue .header img {
+    width: 30%;
+    height: 4.5vh;
+    object-fit: cover;
+    border-radius: 10%;
+}
+
+.right-blue .header p {
+    margin-top: .3rem;
+    font-size: .85rem;
+    font-weight: 600;
+    color: #2a2929;
+}
+
+
+.right-blue .upcoming .upcoming-header div p:nth-child(1) {
+    background: #eeeeee;
+    color: #9d9999;
+}
+
+.right-blue .upcoming .upcoming-header .fa-chevron-down {
+    color: #9d9999 !important;
+}
+
+.right-blue .upcoming .upcoming-header div p {
+    background: #e0dcdc;
+    margin-left: 1rem;
+    padding: 4px;
+    font-size: .9rem;
+    font-weight: 600;
+    border-radius: 8px;
+}
+
+.right-blue .upcoming .upcoming-header div p i {
+    color: #000 !important;
+    font-size: .7rem;
+}
+
+.right-blue .upcoming .upcoming-header h3 {
+    margin-left: -2.7%;
+}
+
+.right-blue .upcoming .upcoming-content div p:nth-child(1) {
+    font-size: .8rem;
+    margin-left: -4px;
+}
+
+.right-blue .upcoming .upcoming-content div p:nth-child(3) {
+    font-weight: 600;
+    margin-bottom: 8px;
+
+}
+
+.right-blue .upcoming .upcoming-content div i {
+    margin: 5px 0px 4px 0;
+    color: #524c4c;
+    font-size: .9rem;
+    margin-left: 1.3px;
+}
+
+.right-blue .upcoming .upcoming-content div p:nth-child(5) {
+    font-weight: 550;
+    color: #888585;
+    font-size: .8rem;
+}
+
+.right-blue .humidity span {
+    color: #4e4a4a !important;
+    font-size: 1rem;
+}
+
+.right-blue .humidity p {
+    font-size: .9rem;
+}
+
+.right-blue .details-column i {
+    background: var(--color);
+    color: #fff;
+    padding: 5px 7px;
+    border-radius: 4px;
+    width: 14%;
+    font-size: .8rem;
+    text-align: center;
+}
+
+.wind-foot {
+    position: relative;
+}
+
+.wind-foot img {
+    width: 50%;
+    margin: 5% auto 0 auto;
+    display: flex;
+}
+
+.wind-foot h3 {
+    position: absolute;
+    top: 74%;
+    left: 37%;
+    font-size: 1.1rem !important;
+}
+
+.percipitation p {
+    font-size: .7rem;
+    margin-left: 5px;
+}
+
+.uvindex span {
+    color: #4e4a4a !important;
+    font-size: 1rem;
+}
+
+.uvindex p {
+    font-size: .8rem;
+    /* margin-left: .1rem; */
+}
+
+.uvindex .uv-foot .behaviour p:nth-child(1) {
+    margin-left: .11rem;
+}
+
+.feels p,
+.rain p {
+    font-size: .7rem;
+}
+
+.details-column h3 {
+    font-size: 1.3rem;
+}
+
+.upcoming-content .wave {
+    position: absolute;
+    top: -7%;
+    margin-left: .5rem;
+    z-index: 1;
+}
+
+.upcoming-content .wave img {
+    width: 122%;
+    height: 50vh;
+}
+
+.wind-num {
+    position: relative;
+    color: #a29f9f;
+    font-size: .7rem;
+}
+
+.wind-num p {
+    position: absolute;
+}
+
+.wind-num p:nth-child(1) {
+    left: 21%;
+    margin-top: 29%;
+}
+
+.wind-num p:nth-child(2) {
+    left: 22%;
+    margin-top: 11%;
+}
+
+.wind-num p:nth-child(3) {
+    left: 31%;
+    margin-top: -3%;
+}
+
+.wind-num p:nth-child(4) {
+    left: 59%;
+    margin-top: -5%;
+}
+
+.wind-num p:nth-child(5) {
+    left: 74%;
+    margin-top: 10%;
+}
+
+.wind-num p:nth-child(6) {
+    left: 76%;
+    margin-top: 28%;
+}
+
+.profile .fa-ellipsis {
+    font-size: 1.4em;
+}
+
+.line-rad {
+    margin-top: 1.4px !important;
+}
